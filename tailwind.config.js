@@ -7,7 +7,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      artifakt: ["ArtifaktElement", "sans-serif"],
+      fira: ["Fira Code", "monospace"],
     },
   },
   plugins: [],
