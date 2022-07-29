@@ -6,6 +6,6 @@ Personal website
 - [yew setup](https://yew.rs/docs/getting-started/introduction)
 - `trunk serve`
 
-## deploy
+## deploy (this triggered automatically by [fleek](https://app.fleek.co/) and deployed to IPNS/IPFS)
 - `trunk build --release`
  
