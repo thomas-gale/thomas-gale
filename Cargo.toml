@@ -1,9 +1,25 @@
-
 [package]
 name = "tgale-eth"
 version = "0.1.0"
-edition = "2018"
+edition = "2021"
 
 [dependencies]
+bevy = "0.8.0"
 # you can check the latest version here: https://crates.io/crates/yew
 yew = "0.19"
+
+[profile.wasm-release]
+# Use release profile as default values
+inherits = "release"
+
+# Optimize with size in mind, also try "s", sometimes it is better.
+# This doesn't increase compilation times compared to -O3, great improvements
+opt-level = "z"
+
+# Do a second optimization pass removing duplicate or unused code from dependencies.
+# Slows compile times, marginal improvements
+lto = "fat"
+
+# When building crates, optimize larger chunks at a time
+# Slows compile times, marginal improvements
+codegen-units = 1

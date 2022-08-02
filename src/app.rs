@@ -2,11 +2,16 @@ use yew::prelude::*;
 
 #[function_component(App)]
 pub fn app() -> Html {
-    html! {
+    html! {<>
         <main>
             <img class="logo" src="https://yew.rs/img/logo.png" alt="Yew logo" />
             <h1>{ "Personal Website for Thomas Gale" }</h1>
             <span class="subtitle">{ "from Yew with " }<i class="heart" /></span>
         </main>
+        <script type="module">
+            { "import init from './wasm_engine.js';
+            init()" }
+        </script>
+        </>
     }
 }
