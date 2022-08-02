@@ -2,14 +2,13 @@ use yew::prelude::*;
 
 #[function_component(Engine)]
 pub fn engine() -> Html {
-    html! {<>
-        <canvas id="bevy" />
+    html! {
+        <div>
+        <canvas id="bevy"/>
         <script type="module">
             { "import init from './wasm_engine.js';
             init()" }
         </script>
-        </>
+        </div>
     }
 }
-
-// <canvas id="bevy" width="window.innerWidth" height="window.innerHeight"/>
