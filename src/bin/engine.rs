@@ -7,10 +7,18 @@ use bevy::{
         render_resource::{Extent3d, TextureDimension, TextureFormat},
         texture::ImageSettings,
     },
+    window::PresentMode,
 };
 
 fn main() {
     App::new()
+        .insert_resource(WindowDescriptor {
+            title: "engine canvas".to_string(),
+            width: 1000.,
+            height: 1000.,
+            present_mode: PresentMode::Fifo,
+            ..default()
+        })
         .insert_resource(ImageSettings::default_nearest())
         .add_plugins(DefaultPlugins)
         .add_startup_system(setup)

@@ -11,7 +11,7 @@ Personal website
 cargo build --profile wasm-release --bin engine --target wasm32-unknown-unknown
 ```
 ```shell
-wasm-bindgen --out-name wasm_engine --out-dir target/wasm-bindgen/release --target web target/wasm32-unknown-unknown/wasm-release/engine.wasm
+wasm-bindgen --out-name wasm_engine --out-dir target/wasm-bindgen/release --no-typescript --target web target/wasm32-unknown-unknown/wasm-release/engine.wasm
 ```
 
 #### [wasm-opt](https://archlinux.org/packages/community/x86_64/binaryen/)

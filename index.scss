@@ -5,15 +5,25 @@ body {
 }
 
 body {
+  background: linear-gradient(to bottom right, #444444, #009a5b);
+}
+
+canvas {
+  position: absolute;
+  width: 100% !important;
+  height: auto !important;
+  z-index: -1;
+}
+
+main {
+  position: absolute;
   align-items: center;
   display: flex;
   justify-content: center;
 
-  background: linear-gradient(to bottom right, #444444, #009a5b);
   font-size: 1.5rem;
-}
 
-main {
+
   color: #fff6d5;
   font-family: sans-serif;
   text-align: center;
@@ -33,3 +43,4 @@ h1 + .subtitle {
   display: block;
   margin-top: -1em;
 }
+
