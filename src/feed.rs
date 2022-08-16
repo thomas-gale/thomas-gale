@@ -18,7 +18,7 @@ pub fn feed() -> Html {
     ];
 
     html! {
-        <div class="feed">
+        <div class="flex-auto p-4 bg-blue-900">
             <h2>{ "Main Feed - Random Musings" }</h2>
             {
                 posts.into_iter().map(|post_props| {

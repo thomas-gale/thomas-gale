@@ -8,8 +8,8 @@ use super::side_bar;
 pub fn app() -> Html {
     html! {
         <main>
-            <div class="v-container">
-                <div class="h-container">
+            <div class="flex flex-col h-full">
+                <div class="flex flow-row flex-wrap h-full">
                     <side_bar::SideBar/>
                     <feed::Feed/>
                 </div>
