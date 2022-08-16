@@ -9,7 +9,7 @@ pub fn app() -> Html {
     html! {
         <main>
             <div class="flex flex-col h-full">
-                <div class="flex flow-row flex-wrap h-full">
+                <div class="flex flow-row flex-wrap ju h-full">
                     <side_bar::SideBar/>
                     <feed::Feed/>
                 </div>

@@ -3,8 +3,6 @@ use yew::prelude::*;
 #[function_component(Pic)]
 pub fn pic() -> Html {
     html! {
-        <div class="pic">
-            <h2>{ "Selfie - awks" }</h2>
-        </div>
+        <img class="rounded-2xl pb-2" src={"/resources/duck_selfie.jpg"} alt={"Selfie of Thomas Gale with a duck"}/>
     }
 }

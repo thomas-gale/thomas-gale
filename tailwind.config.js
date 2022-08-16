@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{html,rs}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        fira: ["FiraCode", "monospace"],
+      },
+    },
   },
   plugins: [],
 };

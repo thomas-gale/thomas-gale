@@ -2,39 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body,
-main {
-  height: 100%;
-  margin: 0;
-}
+@layer base {
 
-.v-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+  @font-face {
+    font-family: 'FiraCode';
+    src: url('/resources/fira_code/FiraCode-VariableFont_wght.ttf');
+  }
 
-.h-container {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-}
+  html,
+  body,
+  main {
+    height: 100%;
+    margin: 0;
+    @apply font-fira;
+  }
 
-.side_bar {
-  flex: 1;
-  padding: 20px;
-  background-color: red;
-}
-
-.feed {
-  flex: 3;
-  padding: 20px;
-  background-color: blue;
-}
-
-.footer {
-  flex: 1;
-  padding: 5px;
-  background-color: green;
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
 }
