@@ -1,12 +1,20 @@
 use yew::prelude::*;
 
+use super::feed;
+use super::footer;
+use super::side_bar;
+
 #[function_component(App)]
 pub fn app() -> Html {
     html! {
         <main>
-            <img class="logo" src="https://yew.rs/img/logo.png" alt="Yew logo" />
-            <h1>{ "Personal Website for Thomas Gale" }</h1>
-            <span class="subtitle">{ "from Yew with " }<i class="heart" /></span>
+            <div class="v-container">
+                <div class="h-container">
+                    <side_bar::SideBar/>
+                    <feed::Feed/>
+                </div>
+                <footer::Footer/>
+            </div>
         </main>
     }
 }

@@ -1,35 +1,36 @@
 html,
-body {
+body,
+main {
   height: 100%;
   margin: 0;
 }
 
-body {
-  align-items: center;
+.v-container {
   display: flex;
-  justify-content: center;
-
-  background: linear-gradient(to bottom right, #444444, #009a5b);
-  font-size: 1.5rem;
+  flex-direction: column;
+  height: 100%;
 }
 
-main {
-  color: #fff6d5;
-  font-family: sans-serif;
-  text-align: center;
+.h-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
 }
 
-.logo {
-  height: 20em;
+.side_bar {
+  flex: 1;
+  padding: 20px;
+  background-color: red;
 }
 
-.heart:after {
-  content: "❤️";
-
-  font-size: 1.75em;
+.feed {
+  flex: 3;
+  padding: 20px;
+  background-color: blue;
 }
 
-h1 + .subtitle {
-  display: block;
-  margin-top: -1em;
+.footer {
+  flex: 1;
+  padding: 5px;
+  background-color: green;
 }
