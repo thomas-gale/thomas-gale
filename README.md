@@ -1,7 +1,7 @@
 # thomas-gale
 Personal website
-https://thomasjamesgale.com
-https://tgale.eth.limo (IPFS hosted mirror)
+ - https://thomasjamesgale.com
+ - https://tgale.eth.limo (IPFS hosted mirror)
 
 ## dev
 - [install rust](https://www.rust-lang.org/tools/install)
