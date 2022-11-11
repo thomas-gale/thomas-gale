@@ -1,4 +1,4 @@
-# tgale.eth
+# thomas-gale
 Personal website
 
 ## dev
