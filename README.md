@@ -1,11 +1,11 @@
 # Thomas Gale
 Welcome to my Github.
 
-## This is the repository for my personal website (WIP)
+## Personal Website
  - https://thomasjamesgale.com
  - https://tgale.eth.limo (IPFS hosted mirror)
 
-### dev
+### Dev Notes
 - [install rust](https://www.rust-lang.org/tools/install)
 - [yew setup](https://yew.rs/docs/getting-started/introduction)
 - `trunk serve`
