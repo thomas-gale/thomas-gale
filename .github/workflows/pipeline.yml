@@ -1,0 +1,36 @@
+name: pipeline
+
+on:
+  push:
+
+jobs:
+  pipeline:
+    runs-on: thomasgale/basic-trunk
+    env:
+      PAGES_DOMAIN: thomasjamesgale.com
+      BUILD_DIR: apps/web/out
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          
+      - name: build
+        run: trunk build --release
+
+      - name: configure the cname for github pages
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: echo ${{ env.PAGES_DOMAIN }} > ${{ env.BUILD_DIR }}/CNAME
+
+      - name: disable jekyll
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: touch ${{ env.BUILD_DIR }}/.nojekyll
+
+      - name: deploy github pages
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: crazy-max/ghaction-github-pages@v2.7.0
+        with:
+          build_dir: ${{ env.BUILD_DIR }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
