@@ -2,7 +2,7 @@
 Welcome to my Github.
 
 ## Personal Website
- - https://thomasjamesgale.com
+ - https://thomasjamesgale.com [![pipeline](https://github.com/thomas-gale/thomas-gale/actions/workflows/pipeline.yml/badge.svg?branch=main)](https://github.com/thomas-gale/thomas-gale/actions/workflows/pipeline.yml)
  - https://tgale.eth.limo (IPFS hosted mirror)
 
 ### Dev Notes
