@@ -5,7 +5,7 @@ on:
 
 jobs:
   pipeline:
-    runs-on: thomasgale/basic-trunk
+    runs-on: ubuntu-latest
     env:
       PAGES_DOMAIN: thomasjamesgale.com
       BUILD_DIR: apps/web/out
@@ -15,9 +15,11 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: recursive
-          
-      - name: build
-        run: trunk build --release
+
+      - name: build 🛠️
+        uses: ./.github/actions/trunk
+        with:
+          cmd: trunk build --release
 
       - name: configure the cname for github pages
         if: ${{ github.ref == 'refs/heads/main' }}

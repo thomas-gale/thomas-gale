@@ -1,0 +1,14 @@
+name: "trunk"
+description: "trunk build environment"
+branding:
+  icon: "package"
+  color: "purple"
+inputs:
+  cmd:
+    description: "build command"
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.cmd }}
