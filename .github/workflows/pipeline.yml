@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PAGES_DOMAIN: thomasjamesgale.com
-      BUILD_DIR: apps/web/out
+      BUILD_DIR: dist
 
     steps:
       - name: checkout
