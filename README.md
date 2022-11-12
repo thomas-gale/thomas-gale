@@ -1,17 +1,17 @@
-# thomas-gale
-Personal website
+# Thomas Gale
+Welcome to my Github.
+
+## This is the repository for my personal website (WIP)
  - https://thomasjamesgale.com
  - https://tgale.eth.limo (IPFS hosted mirror)
 
-## dev
+### dev
 - [install rust](https://www.rust-lang.org/tools/install)
 - [yew setup](https://yew.rs/docs/getting-started/introduction)
 - `trunk serve`
 - [tailwindcss setup](https://tailwindcss.com/blog/standalone-cli)
 
-## deploy (this triggered automatically by [fleek](https://app.fleek.co/) and deployed to IPNS/IPFS)
-(this command is here for reference)
+### deploy (this triggers two builds automatically by [github actions](https://github.com/thomas-gale/thomas-gale/actions/workflows/pipeline.yml) to pages and [fleek](https://app.fleek.co/) to IPNS/IPFS)
 ```shell
 trunk build --release
 ```
- 
