@@ -21,6 +21,9 @@ jobs:
         with:
           cmd: trunk build --release
 
+      - name: chown 
+        run: sudo chown -R $(whoami) ${{ env.BUILD_DIR }}
+
       - name: configure the cname for github pages
         if: ${{ github.ref == 'refs/heads/main' }}
         run: echo ${{ env.PAGES_DOMAIN }} > ${{ env.BUILD_DIR }}/CNAME
