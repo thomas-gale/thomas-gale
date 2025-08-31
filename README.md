@@ -1,6 +1,6 @@
 # Thomas Gale
 Welcome to my Github.
 
-## Personal Website
+## Websites
  - https://thomasjamesgale.com (WIP)
  - https://gale.systems (WIP)
