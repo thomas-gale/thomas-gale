@@ -2,5 +2,5 @@
 Welcome to my Github.
 
 ## Websites
- - https://thomasjamesgale.com (WIP)
+ - https://thomasjamesgale.com
  - https://gale.systems (WIP)
